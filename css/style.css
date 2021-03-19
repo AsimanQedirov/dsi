@@ -1,0 +1,207 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+header nav {
+  width: 100%;
+}
+
+header .container .link-div ul li {
+  margin-left: 2rem;
+}
+
+header .container .link-div ul li a {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #1F2E35;
+}
+
+header .container .link-div ul li a i.fas {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+header .container .logo-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .logo-icons img {
+  margin-left: 40px;
+}
+
+.main-content-1 div {
+  padding-top: 20px;
+}
+
+.main-content-1 div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.main-content-1 div:first-child h1 {
+  font-weight: 700;
+  font-size: 2.7rem;
+}
+
+.main-content-1 div:first-child h1 span {
+  color: #EC323B;
+}
+
+.main-content-1 div:first-child p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.main-content-1 button {
+  display: inline-block;
+  background-color: #EC323B;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.dsi-w {
+  background-color: #F6F6F6;
+}
+
+.dsi-w .welcome-dsi div:last-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dsi-w .welcome-dsi div:last-child h2 {
+  font-size: 2em;
+}
+
+.dsi-w .welcome-dsi div:last-child span {
+  color: #EC323B;
+}
+
+.dsi-w .welcome-dsi div:last-child p {
+  padding-top: 1rem;
+  padding-right: 2rem;
+}
+
+.product-service h3 {
+  margin: 2rem 0px;
+}
+
+.product-service div.col-md-4 {
+  padding-bottom: 10px;
+}
+
+.product-service div.col-md-4 h4 {
+  color: #EC323B;
+  font-size: 1.5em;
+  margin: 10px 0px;
+}
+
+.product-service div.col-md-4 p {
+  font-size: 1rem;
+}
+
+.product-service div.col-md-4 button {
+  display: inline-block;
+  background-color: #EC323B;
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+  position: relative;
+  margin-bottom: 0px;
+}
+
+footer div.col-md-4 h6 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+footer div.col-md-4 p {
+  color: #263238;
+  font-size: 0.9rem;
+  margin-bottom: 0px;
+}
+
+footer div.d-flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container-fluid {
+  background-color: #EC323B;
+  text-align: center;
+}
+
+.container-fluid p {
+  color: white;
+  margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo-icons {
+    display: none !important;
+  }
+  .product-service div {
+    text-align: center;
+  }
+  footer div {
+    padding: 20px 0px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

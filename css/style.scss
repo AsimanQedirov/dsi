@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+$link-color : #1F2E35;
+$span-color : #EC323B;
+@mixin  activeLink() {
+    color: #30444E;    
+    font-weight: 600;
+}
+@mixin button($x,$y) {
+    display: inline-block;
+    background-color: $span-color;
+    border:none;
+    color: white;
+    padding: $x $y;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+}
+header{
+    border-bottom:1px solid rgba(0, 0, 0, 0.25);
+    nav{
+        width: 100%;
+    }
+    .container{
+        .link-div{
+            ul{
+                li{
+                    margin-left: 2rem;
+                    a{
+                        cursor: pointer;
+                        font-size: 1rem;
+                        color: $link-color;
+                        i.fas{
+                            position: relative;
+                            top: 1px;
+                            left: 1px;
+                        }
+                    }
+                }
+            }
+        }
+        .logo-icons{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                margin-left: 40px;
+            }
+        }
+    }
+}
+
+.main-content-1{
+    div{
+        padding-top: 20px;
+    }
+        div:first-child{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            h1{
+                font-weight: 700;
+                font-size: 2.7rem;
+                span{
+                    color: $span-color;
+                }
+            }
+            p{
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+        }
+        button{
+               @include button(12px,30px);
+           }
+        
+}
+.dsi-w{
+    background-color:#F6F6F6;
+    .welcome-dsi{
+
+        div:last-child{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h2{
+                font-size: 2em;
+                
+            }
+            span{
+                color:$span-color;
+            }
+            p{
+                padding-top: 1rem;
+                padding-right: 2rem;
+            }
+        }
+    }
+}
+.product-service{
+    h3{
+        margin: 2rem 0px;
+    }
+    div.col-md-4{
+        padding-bottom: 10px;
+        h4{
+            color: $span-color;
+            font-size: 1.5em;
+            margin: 10px 0px;
+        }
+        p{
+            font-size: 1rem
+        }
+        button{
+            @include button(7px,15px );
+            position:relative;
+            margin-bottom: 0px;
+        }
+    }
+}
+
+footer{
+    div.col-md-4{
+
+        h6{
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        p{  
+            color: #263238;
+            font-size: 0.9rem;
+            margin-bottom: 0px;
+        }
+    }
+    div.d-flex{
+        flex-direction: column;
+        justify-content: flex-end;  
+    }
+}
+.container-fluid{
+    background-color: $span-color;
+    text-align: center;
+    p{
+        color: white;
+        margin: 0px;
+    }
+}
+// this is media queriers
+@media screen and (max-width:768px){
+        .navbar .logo{
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+        .logo-icons{
+            display: none !important;
+        }
+        .product-service{
+            div{
+                text-align: center;
+            }
+        }
+        footer{
+            div{
+                padding:20px 0px;
+            }
+        }
+       
+}

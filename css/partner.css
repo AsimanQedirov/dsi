@@ -1,0 +1,166 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+header nav {
+  width: 100%;
+}
+
+header .container .link-div ul li {
+  margin-left: 2rem;
+}
+
+header .container .link-div ul li a {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #1f2e35;
+}
+
+header .container .link-div ul li a i.fas {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+header .container .logo-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container .logo-icons img {
+  margin-left: 40px;
+}
+
+main.frame {
+  background-image: url("../img/frame-43-2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main.frame div {
+  max-width: 60%;
+  text-align: center;
+}
+
+main.frame div h3 {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+main.frame div h3 span {
+  font-weight: 600;
+}
+
+.container.text-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container.text-main h3 {
+  position: relative;
+}
+
+.container.text-main h3 img {
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+}
+
+.text-main + .container-fluid .card p {
+  font-size: 15px;
+}
+
+footer div.col-md-4 h6 {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+footer div.col-md-4 p {
+  color: #263238;
+  font-size: 0.9rem;
+  margin-bottom: 0px;
+}
+
+footer div.d-flex {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer + .container-fluid {
+  background-color: #ec323b;
+  text-align: center;
+}
+
+footer + .container-fluid p {
+  color: white;
+  margin: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .logo-icons {
+    display: none !important;
+  }
+  main.frame {
+    height: 30vh;
+  }
+  main.frame h3 {
+    font-size: 15px !important;
+  }
+  main.frame p {
+    font-size: 10px;
+  }
+  footer div {
+    padding: 20px 0px;
+  }
+}
+/*# sourceMappingURL=partner.css.map */
